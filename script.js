@@ -1,37 +1,32 @@
 //complete this code
 class Rectangle {
-		constructor(width, height) {
-		this._width = width;
-		this._height = height;
-	}
+    constructor(width, height) {
+        this._width = width;
+        this._height = height;
+    }
 
-	getWidth() {
-		return this._width;
-	}
+    get width() {
+        return this._width;
+    }
 
-	getHeight() {
-		return this._height;
-	}
+    get height() {
+        return this._height;
+    }
 
-	getArea() {
-		return this._width * this._height;
-	}
+    getArea() {
+        return this._width * this._height;
+    }
 }
 
 class Square extends Animal {
-	constructor(side) {
-		super(side, side);
-		this._side = side;
-	}
+    constructor(side) {
+        super(side, side);
+        this._side = side;
+    }
 
-	getPerimeter() {
-		return 4 * this._side;
-	}
-
-	// Adding getArea method for Square
-	getArea() {
-		return this._side * this._side;
-	}
+    getPerimeter() {
+        return 4 * this._side;
+    }
 }
 
 // Do not change the code below this line
